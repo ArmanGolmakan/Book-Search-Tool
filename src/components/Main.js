@@ -12,7 +12,7 @@ const Main = () => {
     const handleSubmit = async (event) => {
         setLoading(true);
         event.preventDefault(); //prevents refreshing webpage
-        const myData = await fetch("http://openlibrary.org/search.json?q=" + searchText);
+        const myData = await fetch("https://openlibrary.org/search.json?q=" + searchText);
         const myDataJson = await myData.json();
         setData(myDataJson);
         setLoading(false);
