@@ -1,0 +1,33 @@
+.container {
+    background-color: #fefffa;
+    padding: 0.5rem;
+    box-shadow: 0 1px 1px #b5783c;
+    margin: 0 0 10px 0;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.bookInfo {
+    padding: 0 20px 0 20px;
+}
+
+.bookTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bookAuthor {
+    font-size: 16px;
+}
+
+.bookPublishDate {
+    font-size: 13px;
+}
+
+.flexContainer img {
+    max-width: 100px;
+}

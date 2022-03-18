@@ -1,0 +1,90 @@
+body {
+    background-color: #DFCFBE;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.parentContainer {
+    max-width: 100%;
+}
+
+.search-field-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    padding: 2px;
+    color: #555;
+    background-color: white;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin:0;
+    width: 300px;
+    height: 40px;
+    padding: 7px 7px;
+    border: 1px solid transparent;
+    color: inherit;
+    border-radius: inherit;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden; /* text-indent and overflow properties hide button's text*/
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    cursor: pointer;
+    background: transparent url('./../res/magnifying-glass-solid.svg') no-repeat center;
+    opacity: 0.5;
+}
+
+button[type='submit']:focus,
+input[type='search']:focus {
+    outline: none;
+    border-color: #4b82a8;
+    box-shadow: 0 0 4px 0 #4b82a8;
+}
+
+button[type='submit']:hover {
+    opacity: 0.9;
+}
+
+.dataContainer {
+    background-color: aliceblue;
+    box-shadow: 0 0 4px 0 #4b82a8;
+    margin: 0 auto;
+    width: 45%;
+    padding: 10px 20px 30px 20px;
+}
+
+.contentHead {
+    padding: 15px 0 15px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+@media (max-width: 768px) {
+    .dataContainer {
+      width: 100%;
+      padding: 0;
+    }
+}
