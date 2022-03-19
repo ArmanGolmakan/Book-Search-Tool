@@ -77,6 +77,10 @@ button[type='submit']:hover {
     font-size: 18px;
 }
 
+.contentHead button {
+    
+}
+
 li {
     list-style-type: none;
 }
