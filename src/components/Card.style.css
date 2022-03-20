@@ -36,3 +36,35 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+@media only screen and (max-width: 800px) {
+    .bookTitle {
+        font-size: 16px;
+    }
+    
+    .bookAuthor {
+        font-size: 14px;
+    }
+    
+    .bookPublishDate {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .bookTitle {
+        font-size: 12px;
+    }
+    
+    .bookAuthor {
+        font-size: 11px;
+    }
+    
+    .bookPublishDate {
+        font-size: 11px;
+    }
+
+    .flexContainer img {
+        max-width: 60px;
+    }
+}
