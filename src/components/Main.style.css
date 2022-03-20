@@ -55,8 +55,6 @@ button[type="submit"] {
 button[type='submit']:focus,
 input[type='search']:focus {
     outline: none;
-    border-color: #4b82a8;
-    box-shadow: 0 0 4px 0 #4b82a8;
 }
 
 button[type='submit']:hover {
@@ -72,13 +70,25 @@ button[type='submit']:hover {
 }
 
 .contentHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 15px 0 15px 10px;
     font-weight: bold;
     font-size: 18px;
 }
 
+.contentHead span:nth-child(2) {
+    font-size: 14px;
+}
+
 .contentHead button {
-    
+    cursor: pointer;
+    text-decoration:underline;
+    background-color: inherit;
+    color: blue;
+    border: none;
+    padding: 8px 8px;
 }
 
 li {
@@ -86,9 +96,14 @@ li {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    .contentHead {
+        flex-direction: column;
+    }
+
     .dataContainer {
       width: 100%;
       padding: 0;
+      box-shadow: none;
     }
 }

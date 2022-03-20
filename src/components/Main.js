@@ -3,11 +3,9 @@ import './Main.style.css';
 import Card from './Card.js';
 
 const Main = () => {
-
     const [data, setData] = useState({ items: [] });
     const [bookCards, setBookCards] = useState([]);
     const [searchText, setSearchText] = useState('');
-    const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const [order, setOrder] = useState('');
 
@@ -15,16 +13,15 @@ const Main = () => {
         let content = [];
         if (data.docs) {
             let sortedBooks = data.docs;
-            if (order == 'alphabetical') {
+            if (order === 'alphabetical') {
                 sortedBooks.sort((a, b) => (a.title > b.title) ? 1 : -1);
             }
-            else if (order == 'publishdate') {
-                console.log("XXXXXXXXXXXX");
+            else if (order === 'publishdate') {
                 sortedBooks.sort((a, b) => (a.first_publish_year > b.first_publish_year) ? 1 : -1);
             }
-            sortedBooks.map((item, index) => {
+            sortedBooks.forEach((item, index) => {
                 content.push(
-                    <li key='index'>
+                    <li key={index}>
                         <Card bookData={item}></Card>
                     </li>
                 );
@@ -35,8 +32,8 @@ const Main = () => {
 
     const handleSubmit = async (event) => {
         setLoading(true);
-        event.preventDefault(); //prevents refreshing webpage
-        const myData = await fetch("https://openlibrary.org/search.json?q=" + searchText);
+        event.preventDefault();
+        const myData = await fetch("https://openlibrary.org/search.json?q=" + searchText + "&limit=20");
         const myDataJson = await myData.json();
         setData(myDataJson);
         setLoading(false);
@@ -62,9 +59,12 @@ const Main = () => {
     const ContentHead = () => {
         return (
             <div className='contentHead'>
-                <span>{data.num_found} results </span>
-                <span>Sort by: <button onClick={sortByTitle}>alphabetical</button> |
-                    <button onClick={sortByPublishDate}>publish date</button></span>
+                <span>{data.num_found.toLocaleString('en-us')} results </span>
+                <span>Sort by:
+                    <button onClick={sortByTitle}>alphabetical</button>
+                    |
+                    <button onClick={sortByPublishDate}>publish date</button>
+                </span>
             </div>
         )
     }

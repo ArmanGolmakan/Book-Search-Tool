@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Main from './components/Main.js';
 import './App.css';
 
 function App(){
   return (
-    <div className="App">
+    <div className='App'>
       <Main/>
     </div>
   );

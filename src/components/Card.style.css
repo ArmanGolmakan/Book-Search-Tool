@@ -31,3 +31,8 @@
 .flexContainer img {
     max-width: 100px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
