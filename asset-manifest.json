@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Book-Search-Tool/static/css/main.899f87fb.css",
-    "main.js": "/Book-Search-Tool/static/js/main.41b724e8.js",
+    "main.css": "/Book-Search-Tool/static/css/main.1af8d705.css",
+    "main.js": "/Book-Search-Tool/static/js/main.0150070f.js",
     "static/js/787.26ac994f.chunk.js": "/Book-Search-Tool/static/js/787.26ac994f.chunk.js",
     "index.html": "/Book-Search-Tool/index.html",
     "static/media/magnifying-glass-solid.svg": "/Book-Search-Tool/static/media/magnifying-glass-solid.c45df18568962a2cba49.svg",
-    "main.899f87fb.css.map": "/Book-Search-Tool/static/css/main.899f87fb.css.map",
-    "main.41b724e8.js.map": "/Book-Search-Tool/static/js/main.41b724e8.js.map",
+    "main.1af8d705.css.map": "/Book-Search-Tool/static/css/main.1af8d705.css.map",
+    "main.0150070f.js.map": "/Book-Search-Tool/static/js/main.0150070f.js.map",
     "787.26ac994f.chunk.js.map": "/Book-Search-Tool/static/js/787.26ac994f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.899f87fb.css",
-    "static/js/main.41b724e8.js"
+    "static/css/main.1af8d705.css",
+    "static/js/main.0150070f.js"
   ]
 }
