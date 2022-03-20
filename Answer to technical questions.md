@@ -2,7 +2,8 @@
 13-14 hours.
 If I had more time I would have loved to:
 
--Add more test cases.  
+-Add more test cases.
+
 -Fetch more than only 20 entries from API and spread the results into multiple pages (1,2,3,...n)
 
 -Add more sorting options.
