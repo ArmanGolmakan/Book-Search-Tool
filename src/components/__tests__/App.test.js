@@ -1,10 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
 import '../../setupTest';
 import App from "../../App";
 import Main from "../Main";
-import Card from "../Card";
 import toJson from 'enzyme-to-json';
 
 describe('rendering components', () => {
@@ -16,8 +14,6 @@ describe('rendering components', () => {
     it('renders Main without crashing', () => {
         shallow(<Main />);
     });
-
-
 
     it('renders page header: Book Search Tool', () => {
         const wrapper = shallow(<Main />);
