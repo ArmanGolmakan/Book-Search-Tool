@@ -1,6 +1,7 @@
 1)
 13-14 hours.
 If I had more time I would have loved to:
+
 -Add more test cases.  
 -Fetch more than only 20 entries from API and spread the results into multiple pages (1,2,3,...n)
 -Add more sorting options.
@@ -39,4 +40,11 @@ I used performance tool for the book searching tool since my page's loading time
 Caching. Since there are requests that produce the same response (searching for the same title multiple times) a cached version of its response will reduce excessive database queries.
 
 5)
-{"firstName":"Arman", "lastName":"Golmakan", "email":"arman.golmakan@gmail.com", "favouriteLanguage":"JavaScript"}
+```
+{
+"firstName":"Arman",
+"lastName":"Golmakan",
+"email":"arman.golmakan@gmail.com",
+"favouriteLanguage":"JavaScript"
+}
+```
